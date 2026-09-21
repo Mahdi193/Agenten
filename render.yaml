@@ -1,0 +1,33 @@
+# Paid service: $7/month compute + $0.25/month for 1 GB storage at setup time.
+# OpenAI usage and any taxes/usage overages are separate.
+services:
+  - type: web
+    name: agentenwerk
+    runtime: docker
+    repo: https://github.com/Mahdi193/Agenten
+    branch: main
+    region: frankfurt
+    plan: 0.5c-512mb
+    numInstances: 1
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /api/status
+    autoDeployTrigger: checksPass
+    disk:
+      name: agentenwerk-data
+      mountPath: /app/data
+      sizeGB: 1
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: APP_TOKEN
+        generateValue: true
+      - key: OPENAI_MODEL
+        value: chat-latest
+      - key: HOST
+        value: 0.0.0.0
+      - key: PORT
+        value: "8787"
+      - key: MAX_DAILY_REQUESTS
+        value: "60"
+      - key: MAX_CONCURRENT_RUNS
+        value: "3"
