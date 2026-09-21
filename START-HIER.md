@@ -4,7 +4,7 @@ Der simulierte Ausführungspfad wurde entfernt. Es gibt keine vorgefertigten KI-
 
 ## Aktueller Stand
 
-Die Android-App benötigt einen erreichbaren Agentenwerk-Server. Cloud-Bereitstellung und echter API-Test stehen noch aus, bis Serveradresse/Zugang und Schlüssel eingerichtet sind. Diese Fassung ist nicht als vollständig geprüfter Grok-Bot-Ersatz freigegeben.
+Die Android-App benötigt einen erreichbaren Agentenwerk-Server. Der echte API-Test und der GitHub-Build waren erfolgreich. Für die Cloud-Bereitstellung fehlen noch Serveradresse und Zugang. Diese Fassung ist nicht als vollständig geprüfter Grok-Bot-Ersatz freigegeben.
 
 Umgesetzt: Agentenprofile, echte Responses-API-Anfragen, Websuche, gespeicherte Präferenzen, Aufgabenverlauf, parallele Agenten, Aufgabenabbruch, manuelle Ergebnisübergaben und Routinen.
 
@@ -37,6 +37,6 @@ Die letzten fünf abgeschlossenen Aufgaben fließen gekürzt in neue Aufträge e
 
 ## Validierung
 
-Neun automatisierte Tests bestehen; sie nutzen gezielte Testantworten statt kostenpflichtiger echter API-Aufrufe. Android 0.1 wurde gebaut und die APK-Signatur geprüft. Die Android-Hülle lädt die aktuelle Oberfläche vom Server. Ein physischer Android-Test, Cloud-Deployment und Live-API-Test sind noch offen. Der ältere Browserprüfbericht beschreibt ausdrücklich die frühere Vorschau.
+Neun automatisierte Tests bestehen; sie nutzen gezielte Testantworten statt kostenpflichtiger echter API-Aufrufe. Android 0.1 wurde gebaut und die APK-Signatur geprüft. Die Android-Hülle lädt die aktuelle Oberfläche vom Server. Echte API-Verbindung, Profilerstellung und Aufgabenausführung sowie der GitHub-Build wurden erfolgreich geprüft. Ein physischer Android-Test und Cloud-Deployment sind noch offen. Der ältere Browserprüfbericht beschreibt ausdrücklich die frühere Vorschau.
 
 Servertests: npm test. Android-Build: im Ordner android gradlew.bat assembleDebug. Die APK-Datei bleibt als Debug-Vorschau gekennzeichnet, bis die tatsächliche Bereitstellung und Gerätetests abgeschlossen sind.
