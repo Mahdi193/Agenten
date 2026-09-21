@@ -39,4 +39,8 @@ Simulierte Ausführung entfernt, Cloud-Container und HTTPS-Proxy vorbereitet, ec
 
 Der inzwischen eingerichtete API-Zugang wurde mit echten OpenAI-Anfragen geprüft. Ein Verbindungstest mit `chat-latest` war erfolgreich. Über die HTTP-Schnittstelle der App wurde ein Agentenprofil erzeugt und gespeichert, danach eine Aufgabe in die Warteschlange gestellt und durch OpenAI bearbeitet. Der Lauf erreichte `done`; die Antwort auf 17 × 23 war korrekt `391`. Die Testdaten lagen nur in einer temporären In-Memory-Datenbank.
 
-Der frühere Demo-Prozess wurde beendet und der reguläre lokale Server gestartet. Cloud-Bereitstellung, echte Websuche, mobiler Gerätetest und der vorbereitete GitHub-Actions-Build stehen weiterhin aus. Die GitHub-Verbindung zum Benutzerkonto funktioniert; ein Ziel-Repository wurde noch nicht angelegt.
+Der frühere Demo-Prozess wurde beendet und der reguläre lokale Server gestartet. Cloud-Bereitstellung, echte Websuche und mobiler Gerätetest stehen weiterhin aus.
+
+## GitHub-Bereitstellung am 21. September 2026
+
+Der Quellcode wurde ohne lokale Zugangsdaten und Datenbanken im Repository [Mahdi193/Agenten](https://github.com/Mahdi193/Agenten) veröffentlicht. [Workflow 35589277973](https://github.com/Mahdi193/Agenten/actions/runs/35589277973) hat beide Jobs erfolgreich abgeschlossen: Servertests und Android-Build. Die Debug-APK steht als Artefakt Agentenwerk-Android bereit (Aufbewahrung: 30 Tage). GitHub betreibt den Agentenserver nicht.
