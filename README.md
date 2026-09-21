@@ -14,7 +14,7 @@ Android-Client und privater Agentenserver mit echter OpenAI-Anbindung. Eigenstä
 
 ## Android auf GitHub bauen
 
-Der Workflow unter `.github/workflows/build.yml` führt zuerst die Servertests aus und erstellt danach eine installierbare Debug-APK. Unter **Actions → Test and build Android → Artifacts → Agentenwerk-Android** herunterladen. Der Build benötigt keinen API-Schlüssel. GitHub Actions wurde lokal vorbereitet, aber noch nicht im Ziel-Repository ausgeführt.
+Der Workflow unter `.github/workflows/build.yml` führt zuerst die Servertests aus und erstellt danach eine installierbare Debug-APK. Unter **Actions → Test and build Android → Artifacts → Agentenwerk-Android** herunterladen. Der Build benötigt keinen API-Schlüssel. Der [GitHub-Build vom 21. September 2026](https://github.com/Mahdi193/Agenten/actions/runs/35589277973) hat Servertests und Android-Build erfolgreich abgeschlossen.
 
 Die APK ist derzeit ein Client: Bei der Einrichtung muss sie sich mit dem laufenden Server verbinden. Das Hochladen des Projekts zu GitHub stellt diesen Server noch nicht bereit. GitHub Pages kann ihn nicht ausführen.
 
@@ -24,7 +24,7 @@ Siehe [START-HIER.md](START-HIER.md). Lokal mit Node.js 24 und `npm start`; für
 
 ## Validierung
 
-Neun automatisierte Tests bestanden. Echte OpenAI-Verbindung, Erzeugung eines Agentenprofils und Bearbeitung einer einfachen Aufgabe wurden am 21. September 2026 erfolgreich geprüft. Der Agent lieferte für 17 × 23 das erwartete Ergebnis 391. Android-Build und APK-Signatur wurden geprüft; Gerätetest, GitHub-Build und dauerhafte Cloud-Bereitstellung stehen noch aus.
+Neun automatisierte Tests bestanden. Echte OpenAI-Verbindung, Erzeugung eines Agentenprofils und Bearbeitung einer einfachen Aufgabe wurden am 21. September 2026 erfolgreich geprüft. Der Agent lieferte für 17 × 23 das erwartete Ergebnis 391. Android-Build und APK-Signatur wurden geprüft; auch der GitHub-Build ist erfolgreich. Gerätetest und dauerhafte Cloud-Bereitstellung stehen noch aus.
 
 ```text
 npm test
